@@ -140,7 +140,7 @@ let ToolsObj = class ToolsObj {
     return touchObj.isSupportTouch
   }
   // 深复制对象 返回复制的对象
-  deelClone(obj) {
+  deepClone(obj) {
     if (!obj) return
     // 一个检测传入的对象是否是指定类型的函数 返回boolean
     function isType(obj, type) {
@@ -224,7 +224,7 @@ let ToolsObj = class ToolsObj {
    * @return {Object} - 返回新对象
    */
   //Fan神的方法 稍微修改版 有个别需要单独处理 如Date对象...
-  deelClone2(obj, cloneAll) {
+  deepClone2(obj, cloneAll) {
     switch (true) {
       case obj === null || obj === undefined:
       case typeof obj === 'number':
